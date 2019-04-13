@@ -25,3 +25,7 @@ Then, in a browser, use this URL:
 The server returns
 
     {"organizations":[{"id":"102","name":"Sigma Kappa Zeta Chapter","city":"Washington","state":"DC","postal":"20052","category":"Greek"}]}
+
+The server is tolerant with the queries, using case-insensitive matching for the search terms, and searching for the term within the fields.  For example, you can search for "category=profit" to see all the "Non-Profit" and "For-Profit" organizations.
+
+You can also use either "direction=DSC" or "direction=dsc" for descending sort orders.
